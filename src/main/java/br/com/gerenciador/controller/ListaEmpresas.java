@@ -20,7 +20,6 @@ public class ListaEmpresas implements Action {
 
 		List<Empresa> listaDeEmpresas = banco.getEmpresas();
 
-		// adicionando propriedades ao request para o jsp consumir
 		request.setAttribute("listaDeEmpresas", listaDeEmpresas);
 
 		return "forward:listaEmpresas.jsp";
